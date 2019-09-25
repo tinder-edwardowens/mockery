@@ -71,7 +71,6 @@ func NewGenerator(iface *Interface, pkg string, inPackage bool) *Generator {
 		packageRoots:      roots,
 	}
 
-	g.addPackageImportWithName("github.com/stretchr/testify/mock", "mock")
 	return g
 }
 
@@ -488,7 +487,7 @@ func (g *Generator) Generate() error {
 	)
 
 	g.printf(
-		"type %s struct {\n\tmock.Mock\n}\n\n", g.mockName(),
+		"type %s struct {\n\tMock\n}\n\n", g.mockName(),
 	)
 
 	for i := 0; i < g.iface.Type.NumMethods(); i++ {
