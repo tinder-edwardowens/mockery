@@ -26,4 +26,4 @@ deploy: false
 
 test_script:
   - go get -v -t ./...
-  - go test -v github.com/vektra/mockery/mockery
+  - go test -v github.com/tinder-edwardowens/mockery/mockery

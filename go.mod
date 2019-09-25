@@ -1,4 +1,4 @@
-module github.com/vektra/mockery
+module github.com/tinder-edwardowens/mockery
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
